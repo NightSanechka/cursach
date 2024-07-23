@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F4F9D69-A3E3-44AA-B19E-EF9F673C8C9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SiteBD</RootNamespace>
+    <AssemblyName>SiteBD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Form.Designer.cs">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Autors_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autors_Form.Designer.cs">
+      <DependentUpon>Autors_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcFieldsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcFieldsForms.Designer.cs">
+      <DependentUpon>CalcFieldsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAutorsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteAutorsForms.Designer.cs">
+      <DependentUpon>SiteAutorsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiteInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteInfo.Designer.cs">
+      <DependentUpon>SiteInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_in.Designer.cs">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteThemsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiteThemsForms.Designer.cs">
+      <DependentUpon>SiteThemsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemsForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemsForms.Designer.cs">
+      <DependentUpon>ThemsForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatingForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatingForms.Designer.cs">
+      <DependentUpon>UpdatingForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPageInfoForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebPageInfoForms.Designer.cs">
+      <DependentUpon>WebPageInfoForms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Form.resx">
+      <DependentUpon>Add_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autors_Form.resx">
+      <DependentUpon>Autors_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcFieldsForms.resx">
+      <DependentUpon>CalcFieldsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiteAutorsForms.resx">
+      <DependentUpon>SiteAutorsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiteInfo.resx">
+      <DependentUpon>SiteInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_in.resx">
+      <DependentUpon>log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SiteThemsForms.resx">
+      <DependentUpon>SiteThemsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemsForms.resx">
+      <DependentUpon>ThemsForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatingForms.resx">
+      <DependentUpon>UpdatingForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPageInfoForms.resx">
+      <DependentUpon>WebPageInfoForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
